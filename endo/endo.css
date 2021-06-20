@@ -1,0 +1,274 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Noto Sans JP', sans-serif;
+
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.header{
+    min-height :100vh;
+    width:100%;
+ background-image:url(/images/1.jpg) ;
+ background-position: center;
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ background-size: cover;
+ position: relative;
+}
+
+
+.hd_right{
+	margin-top: 0px;
+}
+.hd_right ul li a {
+	color:black;
+	font-size: 24px;
+}
+
+nav{
+    display: flex;
+
+    padding:1% 4%;
+    justify-content:space-between;
+    align-items:center;
+
+
+}
+
+
+nav img{
+    width:150px;
+    background-attachment:fixed;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+
+    list-style: none;
+    display:inline-block;
+    padding:6%;
+    position:relative;
+    text-decoration: none;
+    font-size: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 1px;
+    height: 10px;
+    color:#ffffffff;
+   
+    
+}
+.nav-links ul li a{
+    
+    text-decoration: none;
+    font-size: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 1px;
+    height: 10px;
+    color:blue;
+   
+    margin:2px;
+    border-radius: 20px;
+}
+
+
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
+
+
+.text-box{
+    width:90%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+ text-align: center;
+}
+
+
+.text-box h1{
+    font-size: 50px;
+
+}
+
+.text-box p{
+    margin: 10 px 0 40px;
+    font-size: 20px;
+    display: inline-block;
+    font-style: normal;
+    color:black;
+}
+
+.herobt{
+    display: inline-block;
+    text-decoration: blue;
+    color:rgb(0, 0, 0);
+    border: 1px solid;
+    font-size: 13px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 3s;
+}
+.herobt:hover{
+    border:1px solid #f44336;;
+    background:#f44336;
+}
+nav.fa{
+    display: none;
+}
+@media screen and(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    
+    }
+    .nav-links ul li{
+        position: absolute;
+        background:#f44336;
+        height: 100vh;
+        width:200px;
+        top:0;
+        right: -200px;
+        z-index:2;
+    }
+
+
+
+    
+
+
+    .nav-links ul li{
+        display: block;
+    }
+    
+    nav.fa{
+        display: block;
+        color:#fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding:30px;
+    }
+}
+/*-------course-----*/
+.course{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size:36px;
+    font-weight: 600;
+
+}
+section.p{
+    color:#777;
+    
+    font-size:14px;
+    line-height:22px ;
+    font-weight: 600;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background:#e79191;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 50px 50px;
+    box-sizing:border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0;
+}
+
+
+
+.course-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,2);
+
+}
+
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*------campus----*/
+.campus{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top:50px;
+}
+.campus-col img{
+    width: 250%;
+    border-radius: 10px;
+}
+
+.layer{
+    background:transparent;
+    height: 100%;
+    width:100%;
+    position:absolute;
+    top: 0;
+    left:0;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width:768px) {
+    .campus-col img{
+        width:100%;
+        border-radius: 10px;
+    }
+
+    
+}
+
+.footer{
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+body,html{
+    background: teal;
+    color:#fff;
+    width:100%;
+}
+
+footer{
+ 
+bottom:50%;
+}
+.footer-items{
+    display:inline-flex;
+    
+    
+}
+.footer-items.box{
+    flex-basis: 50%;
+    padding-left: 20px;
+}
